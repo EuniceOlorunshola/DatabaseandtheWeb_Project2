@@ -16,6 +16,6 @@ It contains 4 parts on XML Schema, XQuery, and XSLT with subparts.
 
  Write an XML Schema for such XML documents.
 
-* XQuery
+# XQuery
 
 
