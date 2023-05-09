@@ -1,0 +1,5 @@
+for $br_drink in doc("/Users/euniceolorunshola/Desktop/Database and the Web/Project2/XQuery/DatabaseDrinks/drinks.xml")/pubsData/bars/bname, $dn_name in doc("/Users/euniceolorunshola/Desktop/Database and the Web/Project2/XQuery/DatabaseDrinks/drinks.xml")/pubsData/drinkers/dname, $rn_name in doc("/Users/euniceolorunshola/Desktop/Database and the Web/Project2/XQuery/DatabaseDrinks/drinks.xml")/pubsData/beers/rname
+ where ($dn_name = "Donald") and
+ (some $beer_ls in doc("/Users/euniceolorunshola/Desktop/Database and the Web/Project2/XQuery/DatabaseDrinks/drinks.xml")/pubsData/likes/like[./@dname=$dn_name]/rname satisfies $beer_ls=$rn_name) and 
+ (some $sv_beers in doc("/Users/euniceolorunshola/Desktop/Database and the Web/Project2/XQuery/DatabaseDrinks/drinks.xml")/pubsData/serves/serve[./@bname=$br_drink]/rname satisfies $sv_beers=$rn_name) 
+ return $br_drink
