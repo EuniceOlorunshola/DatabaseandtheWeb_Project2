@@ -8,4 +8,5 @@ It contains 4 parts on XML Schema, XQuery, and XSLT with subparts.
 (1) Gradebook
 
 Consider the XML document gradebook.xml. This document describes grade book data as kept by instructors of courses in a university.
-#Write an XML Schema for the gradebook XML documents.
+
+Write an XML Schema for the gradebook XML documents.
