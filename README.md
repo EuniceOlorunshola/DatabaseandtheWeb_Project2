@@ -48,3 +48,14 @@ e. Get the names of performers who have acted in at least 10 movies and have dir
 f. Get the name(s) of the youngest performer(s).
 
 g. Get the names of performers who have directed some actor who is older than them.
+
+
+# XSLT
+  * (I) Movies
+  
+  Consider the XML document movies.xml. 
+  Write XSLT programs to display a Web page to browse all movies based on the first letter of the movie title. 
+  The top of the Web page should have the letters of the alphabet A through Z hyperlinked. 
+  On clicking the hyperlink for a letter the lower part of the screen should display movies whose titles begin with that letter. 
+  Each of the movies in the listing should display the full title with the year in parentheses. 
+  They should also be sorted by year in descending order. The title of the movie should be hyperlinked and upon clicking the hyperlink the details of the individual movie should be displayed below the list of movies.
