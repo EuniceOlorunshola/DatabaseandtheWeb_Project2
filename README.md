@@ -10,11 +10,11 @@ It contains 4 parts on XML Schema, XQuery, and XSLT with subparts.
 
   Write an XML Schema for the gradebook XML documents.
 
-# (II) Binary Tree
+  * (II) Binary Tree
 
-Consider a sample binary-tree XML document in the binarytree.xml document, storing a set of decimal values
+ Consider a sample binary-tree XML document in the binarytree.xml document, storing a set of decimal values
 
-Write an XML Schema for such XML documents.
+ Write an XML Schema for such XML documents.
 
 * XQuery
 
