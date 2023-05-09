@@ -17,5 +17,16 @@ It contains 4 parts on XML Schema, XQuery, and XSLT with subparts.
  Write an XML Schema for such XML documents.
 
 # XQuery
+  * (I) Drinks
+  
+Consider the XML document drinks.xml which records data about bars, beers, and drinkers in a local neighborhood. Write XQuery expressions to answer the following queries:
 
+a. Find bars that serve a beer that Donald likes.
 
+b. Find drinkers who frequent at least one bar that serves a beer they like.
+
+c. Find drinkers who frequent at least all those bars that Donald frequents.
+
+d. Find drinkers who frequent no bar that serves a beer they like.
+
+e. Find drinkers who frequent only bars that serve at least one beer they like.
