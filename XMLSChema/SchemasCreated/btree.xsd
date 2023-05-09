@@ -1,0 +1,51 @@
+<xs:schema  elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- Define a element name node -->
+<xs:element name="node">
+  <xs:complexType>
+    <xs:sequence>
+      <!-- This element contain two other elements which are occurrence indicators that shows that the maximum child node can only be 2 -->
+      <!-- The min0ccurs Indicator is set to 0 to show that the child nodes are not required. -->
+      <xs:element name="node" minOccurs="0" maxOccurs="2">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="node" minOccurs="0" maxOccurs="2">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="node" minOccurs="0" maxOccurs="2">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="node" minOccurs="0" maxOccurs="2">
+                          <xs:complexType>
+                            <xs:simpleContent>
+                              <!-- This element extends the existing simple type string into the attributes -->
+                              <xs:extension base="xs:string">
+                                <!-- Declaring the attributes of the element node -->
+                                <!-- The child attribute type is string because its value is either left or right for the child node.-->
+                              <xs:attribute name="value" type="xs:decimal"/>
+                              <xs:attribute name="child" type="xs:string"/>
+                              </xs:extension>
+                            </xs:simpleContent>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                      <xs:attribute name="value" type="xs:decimal"/>
+                      <xs:attribute name="child" type="xs:string"/>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+                <xs:attribute name="value" type="xs:decimal"/>
+                <xs:attribute name="child" type="xs:string"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+          <xs:attribute name="value" type="xs:decimal"/>
+          <xs:attribute name="child" type="xs:string"/> 
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="value" type="xs:float"/>
+   <xs:attribute name="child" type="xs:string"/>
+  </xs:complexType>
+</xs:element>
+<!-- The end of the schema -->
+</xs:schema>
