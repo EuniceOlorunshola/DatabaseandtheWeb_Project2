@@ -49,6 +49,18 @@ f. Get the name(s) of the youngest performer(s).
 
 g. Get the names of performers who have directed some actor who is older than them.
 
+# steps to access the queries 
+
+1. Download BaseX
+2. Once BaseX is downloaded successfully , go on google and search basex graphical interface . It should show under the basex website the instructions for the graphical interface is different for MAC and Windows. 
+3. If you are using MAC go on your terminal and type basexgui it should load the graphical interface
+4. Once the graphical interface is loaded , on the top left of the tabs click on database create new database .
+5. Upload drinks.xml to create drinks database 
+6. You should see the file in basex 
+7. Copy and paste the queries into editor in basex and run it , it will get the results 
+8. Follow steps 5-7 for movies.xml 
+
+
 
 # XSLT
   * (I) Movies
